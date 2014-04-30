@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>npm locksmith</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+            <h1 class="title"><a href="/">i write things sometimes</a></h1>
+            <a class="extra" href="/">home</a>
+          </div>
+
+          <h2>npm locksmith</h2>
+<p class="meta">12 Sep 2012</p>
+
+<div class="post">
+<p><a href="https://npmjs.org/package/locksmith">Locksmith</a> is an npm module to provide a cluster-wide resource lock backed by redis.</p>
+
+<p>I&#39;m organizing a system to process tweets. Individual workers will pull down a tweeter&#39;s history and analyze their usage patterns.</p>
+
+<p>Since twitter rate limits the api calls I can make, it&#39;s in my advantage to make sure I don&#39;t have two workers pulling the same twitter user at the same time.</p>
+
+<p>Since I&#39;m already using redis, I decided to make use of the <a href="http://redis.io/commands/setnx">setnx</a> command.</p>
+
+<p>Now, locking is generally considered evil. I&#39;d typically just let the workers duplicate work (its honestly going to be rare that I&#39;ll have two workers chewing on the same twitter user). But, this looked like a fun problem to experiment with for a side-project.</p>
+
+</div>
+
+
+          <div class="footer">
+            <div class="contact">
+              <p>
+                Ian Hansen<br />
+                Part outdoorsman, part machine
+              </p>
+            </div>
+            <div class="contact">
+              <p>
+                <a href="https://github.com/supershabam">github.com/supershabam</a><br />
+                <a href="https://twitter.com/supershabam">twitter.com/supershabam</a><br />
+              </p>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>

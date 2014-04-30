@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>node knockout 2013 - polysocket</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+            <h1 class="title"><a href="/">i write things sometimes</a></h1>
+            <a class="extra" href="/">home</a>
+          </div>
+
+          <h2>node knockout 2013 - polysocket</h2>
+<p class="meta">11 Nov 2013</p>
+
+<div class="post">
+<p>For Node Knockout 2013, I finally sat down and built out an idea I&#39;d had for a while: polysocket.</p>
+
+<p>I&#39;ve held a gripe against socket.io for a long time. I was interested in WebSockets for a long time (even writing one of the first, but now abandoned, WebSocket parsers for NodeJS back when the spec changed every week).</p>
+
+<p>I didn&#39;t like socket.io because it wasn&#39;t websockets. Sure, it helped other browsers keep up with the &quot;realtime&quot; hotness, but we are now speaking the &quot;socket.io&quot; protocol instead of websockets.</p>
+
+<p>Then, I used socket.io in a client project and it couldn&#39;t handle a medium amount of load since it communicated state across a poor overloaded redis pubsub channel.</p>
+
+<p>Even though supporting IE6 is no longer a big deal, I wanted to prove that we could build a WebSocket polyfill that would transparently upgrade browsers.</p>
+
+<p>This polyfill is perhaps trickier than other polyfills because there are two sides: the browser and the server. I want the browser to have &quot;WebSockets&quot; and the server to ONLY serve pure WebSockets (not socket.io channels, or sockjs channels, or [insert realtime lib here] channels).</p>
+
+<p>JUST WEBSOCKETS!</p>
+
+<p>So, <a href="http://twitter.com/taterbase">taterbase</a> and I built it. We built it in just a few hours too.</p>
+
+<p><a href="http://nodeknockout.com/teams/nodest-colony">http://nodeknockout.com/teams/nodest-colony</a></p>
+
+</div>
+
+
+          <div class="footer">
+            <div class="contact">
+              <p>
+                Ian Hansen<br />
+                Part outdoorsman, part machine
+              </p>
+            </div>
+            <div class="contact">
+              <p>
+                <a href="https://github.com/supershabam">github.com/supershabam</a><br />
+                <a href="https://twitter.com/supershabam">twitter.com/supershabam</a><br />
+              </p>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>

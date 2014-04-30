@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>autoprefixer in javascript</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+            <h1 class="title"><a href="/">i write things sometimes</a></h1>
+            <a class="extra" href="/">home</a>
+          </div>
+
+          <h2>autoprefixer in javascript</h2>
+<p class="meta">29 Apr 2014</p>
+
+<div class="post">
+<p>What if a ReactJS component could manually handle its style changes?</p>
+
+<p>It seems overcomplicated for a component to apply a class to itself (e.g. active, or open) when it could just apply the css style itself based on the state (e.g. visible: true; translatex: 200px).</p>
+
+<p>Then, there&#39;s the problem of applying vendor prefixes to newer css properties...</p>
+
+<p>We could use the already-built and fantastic Autoprefixer browser-side to get vender-prefixed css properties on-the-fly.</p>
+
+<p>This was just a thought, and it&#39;s honestly a bad one.</p>
+
+<p>Applying css at the component level is bad. It makes your style brittle, especially if you&#39;re attempting the now-standard responsive layout.</p>
+
+<p>What does it mean to be &quot;open&quot; in your css. Does that mean visible? Does that mean translated 200px, or 50px? Once you code the css into the component, you&#39;ve lost all the benefits of dealing with css in the first place.</p>
+
+</div>
+
+
+          <div class="footer">
+            <div class="contact">
+              <p>
+                Ian Hansen<br />
+                Part outdoorsman, part machine
+              </p>
+            </div>
+            <div class="contact">
+              <p>
+                <a href="https://github.com/supershabam">github.com/supershabam</a><br />
+                <a href="https://twitter.com/supershabam">twitter.com/supershabam</a><br />
+              </p>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>
